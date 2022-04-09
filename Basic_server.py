@@ -15,5 +15,5 @@ while True:
     print('Server connect from :',str(addr))
     data = client.recv(1024).decode('utf_8')
     print('Message from client:',data)
-    client.send('We revice your message'.encode('utf_8'))
+    client.send('We receive your message'.encode('utf_8'))
     client.close()    
